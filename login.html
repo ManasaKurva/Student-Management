@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="outer-box">
+      <div class="inner-box">
+        <div class="login-header">
+          <h1>Login</h1>
+          <p class="displayerror"></p>
+        </div>
+        <main class="login-body">
+          <form class="login">
+            <p>
+              <label for="email">Your Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </p>
+            <p>
+              <label for="password">Your Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter your password"
+                required
+              />
+            </p>
+            <p>
+              <input type="submit" id="submit" value="Login" class="login" />
+            </p>
+          </form>
+        </main>
+        <footer class="login-footer">
+          <p>
+            Don't have an accont?<a class="signup" href="signup.html">SignUp</a>
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    padding: 20px;
+    width: full;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #fe7f00, #db40e7);
+
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    gap: 10px;
+    color: black;
+    font-weight: bold;
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.button {
+    background-color: #072CAF;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background-color: white;
+    font-weight: bold;
+    color: black;
+}
+
+.button:active {
+    transform: scale(0.9);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.submitForm,
+.updateform,
+.updateform1,
+.deleteform,
+.retrieveform {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.submitForm input,
+.updateform input,
+.updateform1 input,
+.deleteform input,
+.retrieveform input {
+    border: none;
+    border-bottom: 3px solid #070606;
+    outline: none;
+    margin-left: 20px 10px;
+    padding: 7px;
+    width: 250px;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+td {
+    padding: 8px 30px;
+    margin: 10px;
+
+}
+
+.styled-textarea {
+    border: none;
+    border-bottom: 3px solid #070606;
+    outline: none;
+    resize: none;
+    border-radius: 4px;
+    height: 30px;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+
+.rollupdate {
+    background-color: transparent;
+}
+
+.display {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transition: 1.2s;
+    font-weight: 600;
+}
+
+.retrieve-container {
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}

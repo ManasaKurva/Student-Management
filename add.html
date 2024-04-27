@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Add Student Information</h1>
+      <form class="submitForm">
+        <table>
+          <tr>
+            <td><label for="name">Name:</label></td>
+            <td><input type="text" id="name" name="name" required /></td>
+          </tr>
+          <tr>
+            <td><label for="rollno">Roll No:</label></td>
+            <td><input type="text" id="rollno" name="rollno" required /></td>
+          </tr>
+          <tr>
+            <td><label for="branch">Branch:</label></td>
+            <td><input type="text" id="branch" name="branch" required /></td>
+          </tr>
+          <tr>
+            <td><label for="section">Section:</label></td>
+            <td><input type="text" id="section" name="section" required /></td>
+          </tr>
+          <tr>
+            <td><label for="phnno">Phone Number:</label></td>
+            <td><input type="tel" id="phnno" name="phnno" required /></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email" required /></td>
+          </tr>
+          <tr>
+            <td><label for="cgpa">CGPA:</label></td>
+            <td>
+              <input type="number" id="cgpa" name="cgpa" step="0.01" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="address">Address:</label></td>
+            <td>
+              <textarea
+                id="address"
+                name="address"
+                rows="4"
+                cols="33"
+                class="styled-textarea"
+                required
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="starting_year">Starting Year:</label></td>
+            <td>
+              <input
+                type="number"
+                id="starting_year"
+                name="starting_year"
+                required
+              />
+            </td>
+          </tr>
+        </table>
+        <br />
+        <div>
+          <button
+            type="submit"
+            class="back button"
+            onclick="`${  window.location.href = 'index.html'}`"
+          >
+            Back
+          </button>
+          <button type="submit" class="submitButton button">Add</button>
+        </div>
+      </form>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>

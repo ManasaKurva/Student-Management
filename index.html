@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Management System</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn5.vectorstock.com/i/1000x1000/48/39/study-book-logo-icon-design-vector-22504839.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="title">Student Management System</h1>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <p>
+            Manage student profiles and academic records with ease using our
+            Student Management System. Streamline administrative tasks and
+            enhance communication between faculty, students, and parents.
+          </p>
+          <button class="adddata button">Add</button>
+        </div>
+        <div class="card">
+          <p>
+            Retrieve student information instantly for quick reference and
+            analysis. Access attendance records, grades, and other essential
+            data with just a few clicks.
+          </p>
+          <button class="retrievedata button">Retrieve</button>
+        </div>
+        <div class="card">
+          <p>
+            Keep student data up-to-date effortlessly. Update personal details,
+            course enrollments, and academic progress seamlessly to ensure
+            accurate records.
+          </p>
+          <button class="updatedata button">Update</button>
+        </div>
+        <div class="card">
+          <p>
+            Easily manage student withdrawals and transfers by deleting outdated
+            records. Maintain data integrity by securely removing redundant
+            information from the system.
+          </p>
+          <button class="deletedata button">Delete</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      const adddata = document.querySelector(".adddata");
+      adddata.addEventListener("click", () => {
+        window.location.href = "add.html";
+      });
+      const retrievedata = document.querySelector(".retrievedata");
+      retrievedata.addEventListener("click", () => {
+        window.location.href = "retrieve.html";
+      });
+      const updatedata = document.querySelector(".updatedata");
+      updatedata.addEventListener("click", () => {
+        window.location.href = "update.html";
+      });
+      const deletedata = document.querySelector(".deletedata");
+      deletedata.addEventListener("click", () => {
+        window.location.href = "delete.html";
+      });
+    </script>
+    <script src="bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <div class="outer-box">
+      <div class="inner-box">
+        <div class="signup-header">
+          <h1>Signup</h1>
+          <p class="displayerror"></p>
+        </div>
+        <main class="signup-body">
+          <form class="signup">
+            <p>
+              <label for="email">Your Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </p>
+            <p>
+              <label for="password">Your Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter your password"
+                required
+              />
+            </p>
+            <p>
+              <input
+                type="submit"
+                id="submit"
+                value="Create Account"
+                class="createaccount"
+              />
+            </p>
+          </form>
+        </main>
+        <footer class="signip-footer">
+          <p>
+            Already have an accont?<a class="login" href="login.html">Login</a>
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>

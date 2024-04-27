@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container deletecontainer">
+      <h2 class="title">Delete Student Information</h2>
+      <form class="deleteform">
+        <table>
+          <td><label for="rollno">Roll No:</label></td>
+          <td><input type="text" id="rollno" name="rollno" required /></td>
+        </table>
+        <div>
+          <button
+            type="submit"
+            class="back button"
+            onclick="`${  window.location.href = 'index.html'}`"
+          >
+            Back
+          </button>
+          <button class="deletedata button">Delete</button>
+        </div>
+      </form>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
